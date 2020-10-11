@@ -1,9 +1,12 @@
 # Initial Firebase
 
+This Firebase project will later be used to host the Vue project, provide user authentication with Google and save user credentials so that later we can use it to interact with Youtube API.
+
 ## Prerequisite
 
 - A Google account to use [Firebase](https://firebase.google.com/), [Google Cloud Platform](https://cloud.google.com/) and [YouTube](https://www.youtube.com/).
 - Install [Firebase CLI](https://firebase.google.com/docs/cli) and sign in to Firebase on your local machine using Firebase CLI
+- If you want to deploy something to Firebase, you need to upgrade your account to a paid tier. A free Google account is all you need to play with Firebase things in your development environment.
 
 You can follow my instruction to play with a new Firebase and Google Cloud Platform project or integrate with your existed project with a little tweak (which you can easily figure out after reading my instruction).
 
@@ -90,7 +93,7 @@ Back to the previous opened console
 firebase init
 ```
 
-Redo some previous steps
+Redo some of previous steps
 
 ```text
 
@@ -197,7 +200,12 @@ i  Writing gitignore file to .gitignore...
 ✔  Firebase initialization complete!
 ```
 
-Now you have a successfully created Firebase project folder.
+Now you have a successfully created Firebase project folder with:
+
+- A Node.js **functions** folder which is used as a backend to generate necessary tokens after user signed in using Google account.
+- A hosting server for the Vue project which later be used as the place for user to choose the sign in method to give us the necessary permission to interact with Youtube.
+- A Firestore database to save the generated tokens.
+- 3 Emulators for those 3 above Firebase's services so that we can play with them in our local machine without the need of deploying them to the real Firebase servers.
 
 ## Add Youtube API to Google Cloud Platform project
 
