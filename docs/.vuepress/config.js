@@ -8,7 +8,7 @@ module.exports = {
     }
   },
   themeConfig: {
-    logo: '/hero.png',
+    logo: '/assets/images/hero.png',
     sidebarDepth: 2,
     repo: 'cuongtripla/firetubela',
     repoLabel: 'GitHub',

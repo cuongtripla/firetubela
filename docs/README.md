@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /hero.png
+heroImage: /assets/images/hero.png
 heroText: FireTubeLa
 tagline: Firebase, Youtube, Tripla
 actionText: Get Started →
